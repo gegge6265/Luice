@@ -1,1 +1,10 @@
 D:\Librerie\Scuola 4 itis\Informatica - Camuso\Visual Studio\Luice\Luice\bin\Release\Luice.exe.config
+D:\Librerie\Scuola 4 itis\Informatica - Camuso\Visual Studio\Luice\Luice\bin\Release\Luice.exe
+D:\Librerie\Scuola 4 itis\Informatica - Camuso\Visual Studio\Luice\Luice\bin\Release\Luice.pdb
+D:\Librerie\Scuola 4 itis\Informatica - Camuso\Visual Studio\Luice\Luice\bin\Release\MySql.Data.dll
+D:\Librerie\Scuola 4 itis\Informatica - Camuso\Visual Studio\Luice\Luice\obj\Release\Luice.csprojResolveAssemblyReference.cache
+D:\Librerie\Scuola 4 itis\Informatica - Camuso\Visual Studio\Luice\Luice\obj\Release\Luice.Form1.resources
+D:\Librerie\Scuola 4 itis\Informatica - Camuso\Visual Studio\Luice\Luice\obj\Release\Luice.Properties.Resources.resources
+D:\Librerie\Scuola 4 itis\Informatica - Camuso\Visual Studio\Luice\Luice\obj\Release\Luice.csproj.GenerateResource.Cache
+D:\Librerie\Scuola 4 itis\Informatica - Camuso\Visual Studio\Luice\Luice\obj\Release\Luice.exe
+D:\Librerie\Scuola 4 itis\Informatica - Camuso\Visual Studio\Luice\Luice\obj\Release\Luice.pdb

@@ -175,6 +175,7 @@
             this.connBtn.TabIndex = 15;
             this.connBtn.Text = "Connect!";
             this.connBtn.UseVisualStyleBackColor = true;
+            this.connBtn.Click += new System.EventHandler(this.connBtn_Click);
             // 
             // Form1
             // 
