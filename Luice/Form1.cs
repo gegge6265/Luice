@@ -17,6 +17,36 @@ namespace Luice
         {
             InitializeComponent();
         }
+        public string GetHost()
+        {
+            string host = hostTxt.Text;
+            return host;
+        }
+        public string GetUser()
+        {
+            string user = uidTxt.Text;
+            return user;
+        }
+        public string GetPsw()
+        {
+            string psw = passwordTxt.Text;
+            return psw;
+        }
+        public string GetAuth()
+        {
+            string auth = authTxt.Text;
+            return auth;
+        }
+        public string GetChar()
+        {
+            string characters = charTxt.Text;
+            return characters;
+        }
+        public string GetWorld()
+        {
+            string world = worldTxt.Text;
+            return world;
+        }
 
         private void connBtn_Click(object sender, EventArgs e)
         {
@@ -39,9 +69,14 @@ namespace Luice
             }
             finally
             {
+                string host = GetHost();
                 MessageBox.Show("Connection Open!");
-                
+                LuiceEditor editor = new LuiceEditor(this);
+                editor.Show();
+                                
             }
+            
+            
         }
     }
 }

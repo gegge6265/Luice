@@ -8,3 +8,4 @@ D:\Librerie\Scuola 4 itis\Informatica - Camuso\Visual Studio\Luice\Luice\obj\Rel
 D:\Librerie\Scuola 4 itis\Informatica - Camuso\Visual Studio\Luice\Luice\obj\Release\Luice.csproj.GenerateResource.Cache
 D:\Librerie\Scuola 4 itis\Informatica - Camuso\Visual Studio\Luice\Luice\obj\Release\Luice.exe
 D:\Librerie\Scuola 4 itis\Informatica - Camuso\Visual Studio\Luice\Luice\obj\Release\Luice.pdb
+D:\Librerie\Scuola 4 itis\Informatica - Camuso\Visual Studio\Luice\Luice\obj\Release\Luice.LuiceEditor.resources
