@@ -45,6 +45,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.connBtn = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -129,10 +130,17 @@
             this.connBtn.UseVisualStyleBackColor = true;
             this.connBtn.Click += new System.EventHandler(this.connBtn_Click);
             // 
+            // checkBox1
+            // 
+            resources.ApplyResources(this.checkBox1, "checkBox1");
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.connBtn);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -173,6 +181,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button connBtn;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
