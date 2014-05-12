@@ -1,5 +1,8 @@
 Goals:
 ToDo
 - Finish to rewrite Truice in C#
-- Implement ssh Connection
 - Customizations.
+- Add Mysql Ssh Connection
+
+Done:
+- Implement ssh Connection
