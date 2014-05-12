@@ -48,24 +48,32 @@ namespace Luice
             string world = worldTxt.Text;
             return world;
         }
-       
+
+        bool sshconn = false;
         private void connBtn_Click(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
             {
-                //todo ssh connection
-                using (var client = new SshClient(hostTxt.Text, uidTxt.Text, passwordTxt.Text))
+                sshconn = true;
+                try
                 {
-                    client.Connect();
-                    MessageBox.Show("connessione ssh eseguita");
-                    client.RunCommand(charTxt.Text); //atm only for test scope
-                    MessageBox.Show("comando eseguito");
-                    client.Disconnect();
-                    MessageBox.Show("connessione chiusa");
+                    using (var client = new SshClient(hostTxt.Text, uidTxt.Text, passwordTxt.Text))
+                    {
+                        client.Connect();
+                        client.Disconnect();
+                        MessageBox.Show("logged in!");
+                    }
+                    LuiceEditor editor = new LuiceEditor(this);
+                    editor.Show();
+                }
+                catch
+                {
+                    MessageBox.Show("error: check again the data that you inserted and retry.");
                 }
             }
             else
             {
+                sshconn = false;
                 string connection1 = "Server=" + hostTxt.Text + ";Database=" + authTxt.Text + ";UID=" + uidTxt.Text + ";Password=" + passwordTxt.Text + ";";
                 string connection2 = "Server=" + hostTxt.Text + ";Database=" + charTxt.Text + ";UID=" + uidTxt.Text + ";Password=" + passwordTxt.Text + ";";
                 string connection3 = "Server=" + hostTxt.Text + ";Database=" + worldTxt.Text + ";UID=" + uidTxt.Text + ";Password=" + passwordTxt.Text + ";";
@@ -95,6 +103,10 @@ namespace Luice
                 
             }
             
+        }
+        public bool GetSsh()
+        {
+            return sshconn;
         }
     }
 }
