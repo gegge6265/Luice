@@ -41,6 +41,12 @@
             this.entry = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.npcflag = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.minlevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maxlevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.count = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name_loc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subname_loc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.creatureTab.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -145,7 +151,13 @@
             this.creatureSearchDgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.entry,
             this.name,
-            this.subname});
+            this.subname,
+            this.npcflag,
+            this.minlevel,
+            this.maxlevel,
+            this.count,
+            this.name_loc,
+            this.subname_loc});
             this.creatureSearchDgv.Location = new System.Drawing.Point(10, 53);
             this.creatureSearchDgv.Name = "creatureSearchDgv";
             this.creatureSearchDgv.Size = new System.Drawing.Size(739, 199);
@@ -165,7 +177,37 @@
             // 
             this.subname.HeaderText = "subname";
             this.subname.Name = "subname";
-            // 
+            //
+            // npcflag
+            //
+            this.npcflag.HeaderText = "npcflag";
+            this.npcflag.Name = "npcflag";
+            //
+            // minlevel
+            //
+            this.minlevel.HeaderText = "minlevel";
+            this.minlevel.Name = "minlevel";
+            //
+            // maxlevel
+            //
+            this.maxlevel.HeaderText = "maxlevel";
+            this.maxlevel.Name = "maxlevel";
+            //
+            // count
+            //
+            this.count.HeaderText = "count";
+            this.count.Name = "count";
+            //
+            // name_loc*
+            //
+            this.name_loc.HeaderText = "name_loc";
+            this.name_loc.Name = "name_loc";
+            //
+            // subname_loc
+            //
+            this.subname_loc.HeaderText = "subname_loc";
+            this.subname_loc.Name = "subname_loc";
+            //
             // LuiceEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -196,6 +238,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn entry;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn subname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn npcflag;
+        private System.Windows.Forms.DataGridViewTextBoxColumn minlevel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maxlevel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn count;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name_loc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subname_loc;
         private System.Windows.Forms.Button findCreatureBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox npcEntryTxt;
