@@ -33,28 +33,21 @@
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.creatureSearchDgv = new System.Windows.Forms.DataGridView();
+            this.findCreatureBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.npcEntryTxt = new System.Windows.Forms.TextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.gameobjectTab = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.locNumberTxt = new System.Windows.Forms.TextBox();
             this.entry = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.npcflag = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.minlevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.maxlevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.count = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name_loc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subname_loc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.findCreatureBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.npcEntryTxt = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.gameobjectTab = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.creatureTab.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -95,14 +88,8 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.textBox4);
-            this.tabPage1.Controls.Add(this.textBox3);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.locNumberTxt);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.creatureSearchDgv);
             this.tabPage1.Controls.Add(this.findCreatureBtn);
             this.tabPage1.Controls.Add(this.label1);
@@ -126,58 +113,12 @@
             this.npcflag,
             this.minlevel,
             this.maxlevel,
-            this.count,
             this.name_loc,
             this.subname_loc});
             this.creatureSearchDgv.Location = new System.Drawing.Point(35, 69);
             this.creatureSearchDgv.Name = "creatureSearchDgv";
             this.creatureSearchDgv.Size = new System.Drawing.Size(943, 329);
             this.creatureSearchDgv.TabIndex = 3;
-            // 
-            // entry
-            // 
-            this.entry.HeaderText = "entry";
-            this.entry.Name = "entry";
-            // 
-            // name
-            // 
-            this.name.HeaderText = "name";
-            this.name.Name = "name";
-            // 
-            // subname
-            // 
-            this.subname.HeaderText = "subname";
-            this.subname.Name = "subname";
-            // 
-            // npcflag
-            // 
-            this.npcflag.HeaderText = "npcflag";
-            this.npcflag.Name = "npcflag";
-            // 
-            // minlevel
-            // 
-            this.minlevel.HeaderText = "minlevel";
-            this.minlevel.Name = "minlevel";
-            // 
-            // maxlevel
-            // 
-            this.maxlevel.HeaderText = "maxlevel";
-            this.maxlevel.Name = "maxlevel";
-            // 
-            // count
-            // 
-            this.count.HeaderText = "count";
-            this.count.Name = "count";
-            // 
-            // name_loc
-            // 
-            this.name_loc.HeaderText = "name_loc";
-            this.name_loc.Name = "name_loc";
-            // 
-            // subname_loc
-            // 
-            this.subname_loc.HeaderText = "subname_loc";
-            this.subname_loc.Name = "subname_loc";
             // 
             // findCreatureBtn
             // 
@@ -211,7 +152,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(956, 365);
+            this.tabPage2.Size = new System.Drawing.Size(1007, 416);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -221,83 +162,73 @@
             this.gameobjectTab.Location = new System.Drawing.Point(4, 22);
             this.gameobjectTab.Name = "gameobjectTab";
             this.gameobjectTab.Padding = new System.Windows.Forms.Padding(3);
-            this.gameobjectTab.Size = new System.Drawing.Size(764, 283);
+            this.gameobjectTab.Size = new System.Drawing.Size(1028, 450);
             this.gameobjectTab.TabIndex = 1;
             this.gameobjectTab.Text = "GameObject";
             this.gameobjectTab.UseVisualStyleBackColor = true;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(116, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(197, 20);
-            this.textBox1.TabIndex = 4;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(113, 3);
+            this.label2.Location = new System.Drawing.Point(150, 3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Name";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.Size = new System.Drawing.Size(97, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "localization number";
             // 
-            // textBox2
+            // locNumberTxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(328, 24);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(217, 20);
-            this.textBox2.TabIndex = 6;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.locNumberTxt.Location = new System.Drawing.Point(153, 23);
+            this.locNumberTxt.Name = "locNumberTxt";
+            this.locNumberTxt.Size = new System.Drawing.Size(47, 20);
+            this.locNumberTxt.TabIndex = 5;
             // 
-            // label3
+            // entry
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(325, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Sub Name";
+            this.entry.HeaderText = "entry";
+            this.entry.Name = "entry";
             // 
-            // textBox3
+            // name
             // 
-            this.textBox3.Location = new System.Drawing.Point(703, 24);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 8;
+            this.name.HeaderText = "name";
+            this.name.Name = "name";
             // 
-            // textBox4
+            // subname
             // 
-            this.textBox4.Location = new System.Drawing.Point(820, 24);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 9;
+            this.subname.HeaderText = "subname";
+            this.subname.Name = "subname";
             // 
-            // label4
+            // npcflag
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(700, 3);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "KillCredit1";
+            this.npcflag.HeaderText = "npcflag";
+            this.npcflag.Name = "npcflag";
             // 
-            // label5
+            // minlevel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(817, 3);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 13);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "KillCredit2";
+            this.minlevel.HeaderText = "minlevel";
+            this.minlevel.Name = "minlevel";
+            // 
+            // maxlevel
+            // 
+            this.maxlevel.HeaderText = "maxlevel";
+            this.maxlevel.Name = "maxlevel";
+            // 
+            // name_loc
+            // 
+            this.name_loc.HeaderText = "name_loc";
+            this.name_loc.Name = "name_loc";
+            // 
+            // subname_loc
+            // 
+            this.subname_loc.HeaderText = "subname_loc";
+            this.subname_loc.Name = "subname_loc";
             // 
             // LuiceEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1039, 482);
+            this.ClientSize = new System.Drawing.Size(1022, 482);
             this.Controls.Add(this.tabControl1);
             this.Name = "LuiceEditor";
             this.Text = "LuiceEditor";
@@ -319,27 +250,20 @@
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView creatureSearchDgv;
+        private System.Windows.Forms.Button findCreatureBtn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox npcEntryTxt;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TextBox locNumberTxt;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn entry;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn subname;
         private System.Windows.Forms.DataGridViewTextBoxColumn npcflag;
         private System.Windows.Forms.DataGridViewTextBoxColumn minlevel;
         private System.Windows.Forms.DataGridViewTextBoxColumn maxlevel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn count;
         private System.Windows.Forms.DataGridViewTextBoxColumn name_loc;
         private System.Windows.Forms.DataGridViewTextBoxColumn subname_loc;
-        private System.Windows.Forms.Button findCreatureBtn;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox npcEntryTxt;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
 
     }
 }
