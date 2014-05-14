@@ -28,13 +28,18 @@ namespace Luice
         }
         private void findCreatureBtn_Click(object sender, EventArgs e)
         {
+            creatureSearchDgv.Rows.Clear(); //if a search already exist, this will clear the data grid view
             if (!connform.GetSsh())
             {
 
-                MySqlConnection conn1 = new MySqlConnection("Server=" + connform.GetHost() + ";Database=" + connform.GetWorld() + ";UID=" + connform.GetUser() + ";Password=" + connform.GetPsw() + ";");
+                MySqlConnection conn1 = new MySqlConnection("Server=" + connform.GetHost() + ";Port="+ connform.GetPort() +";Database=" + connform.GetWorld() + ";UID=" + connform.GetUser() + ";Password=" + connform.GetPsw() + ";");
                 conn1.Open();
 
-                MySqlCommand cmd = new MySqlCommand("select creature_template.entry, name, subname, npcflag, minlevel, maxlevel, name_loc"+locNumberTxt.Text+", subname_loc"+locNumberTxt.Text+" from creature_template join locales_creature on creature_template.entry = locales_creature.entry where creature_template.entry = " + npcEntryTxt.Text + "; ", conn1);
+                MySqlCommand cmd = new MySqlCommand("", conn1);
+                if (locNumberTxt.Text != "")
+                    cmd.CommandText = "select creature_template.entry, name, subname, npcflag, minlevel, maxlevel, name_loc" + locNumberTxt.Text + ", subname_loc" + locNumberTxt.Text + " from creature_template join locales_creature on creature_template.entry = locales_creature.entry where creature_template.entry = " + npcEntryTxt.Text + "; ";
+                else
+                    cmd.CommandText = "select creature_template.entry, name, subname, npcflag, minlevel, maxlevel from creature_template where creature_template.entry = " + npcEntryTxt.Text + "; ";
                 MySqlDataReader read = cmd.ExecuteReader();
                 int pos = -1;
                 while (read.Read())
@@ -46,8 +51,11 @@ namespace Luice
                     creatureSearchDgv.Rows[pos].Cells["npcflag"].Value = Convert.ToString(read["npcflag"]);
                     creatureSearchDgv.Rows[pos].Cells["minlevel"].Value = Convert.ToString(read["minlevel"]);
                     creatureSearchDgv.Rows[pos].Cells["maxlevel"].Value = Convert.ToString(read["maxlevel"]);
-                    creatureSearchDgv.Rows[pos].Cells["name_loc"].Value = Convert.ToString(read["name_loc"+locNumberTxt.Text]);
-                    creatureSearchDgv.Rows[pos].Cells["subname_loc"].Value = Convert.ToString(read["subname_loc"+locNumberTxt.Text]);
+                    if(locNumberTxt.Text != "")
+                    {
+                        creatureSearchDgv.Rows[pos].Cells["name_loc"].Value = Convert.ToString(read["name_loc"+locNumberTxt.Text]);
+                        creatureSearchDgv.Rows[pos].Cells["subname_loc"].Value = Convert.ToString(read["subname_loc"+locNumberTxt.Text]);
+                    }
                 }
                 conn1.Close();
             }

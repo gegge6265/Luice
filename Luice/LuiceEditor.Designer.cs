@@ -32,14 +32,9 @@
             this.creatureTab = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.creatureSearchDgv = new System.Windows.Forms.DataGridView();
-            this.findCreatureBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.npcEntryTxt = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.gameobjectTab = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
             this.locNumberTxt = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.creatureSearchDgv = new System.Windows.Forms.DataGridView();
             this.entry = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subname = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +43,11 @@
             this.maxlevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name_loc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subname_loc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.findCreatureBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.npcEntryTxt = new System.Windows.Forms.TextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.gameobjectTab = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.creatureTab.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -103,6 +103,22 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // locNumberTxt
+            // 
+            this.locNumberTxt.Location = new System.Drawing.Point(153, 23);
+            this.locNumberTxt.Name = "locNumberTxt";
+            this.locNumberTxt.Size = new System.Drawing.Size(47, 20);
+            this.locNumberTxt.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(150, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "localization number";
+            // 
             // creatureSearchDgv
             // 
             this.creatureSearchDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -119,6 +135,46 @@
             this.creatureSearchDgv.Name = "creatureSearchDgv";
             this.creatureSearchDgv.Size = new System.Drawing.Size(943, 329);
             this.creatureSearchDgv.TabIndex = 3;
+            // 
+            // entry
+            // 
+            this.entry.HeaderText = "entry";
+            this.entry.Name = "entry";
+            // 
+            // name
+            // 
+            this.name.HeaderText = "name";
+            this.name.Name = "name";
+            // 
+            // subname
+            // 
+            this.subname.HeaderText = "subname";
+            this.subname.Name = "subname";
+            // 
+            // npcflag
+            // 
+            this.npcflag.HeaderText = "npcflag";
+            this.npcflag.Name = "npcflag";
+            // 
+            // minlevel
+            // 
+            this.minlevel.HeaderText = "minlevel";
+            this.minlevel.Name = "minlevel";
+            // 
+            // maxlevel
+            // 
+            this.maxlevel.HeaderText = "maxlevel";
+            this.maxlevel.Name = "maxlevel";
+            // 
+            // name_loc
+            // 
+            this.name_loc.HeaderText = "name_loc";
+            this.name_loc.Name = "name_loc";
+            // 
+            // subname_loc
+            // 
+            this.subname_loc.HeaderText = "subname_loc";
+            this.subname_loc.Name = "subname_loc";
             // 
             // findCreatureBtn
             // 
@@ -166,62 +222,6 @@
             this.gameobjectTab.TabIndex = 1;
             this.gameobjectTab.Text = "GameObject";
             this.gameobjectTab.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(150, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "localization number";
-            // 
-            // locNumberTxt
-            // 
-            this.locNumberTxt.Location = new System.Drawing.Point(153, 23);
-            this.locNumberTxt.Name = "locNumberTxt";
-            this.locNumberTxt.Size = new System.Drawing.Size(47, 20);
-            this.locNumberTxt.TabIndex = 5;
-            // 
-            // entry
-            // 
-            this.entry.HeaderText = "entry";
-            this.entry.Name = "entry";
-            // 
-            // name
-            // 
-            this.name.HeaderText = "name";
-            this.name.Name = "name";
-            // 
-            // subname
-            // 
-            this.subname.HeaderText = "subname";
-            this.subname.Name = "subname";
-            // 
-            // npcflag
-            // 
-            this.npcflag.HeaderText = "npcflag";
-            this.npcflag.Name = "npcflag";
-            // 
-            // minlevel
-            // 
-            this.minlevel.HeaderText = "minlevel";
-            this.minlevel.Name = "minlevel";
-            // 
-            // maxlevel
-            // 
-            this.maxlevel.HeaderText = "maxlevel";
-            this.maxlevel.Name = "maxlevel";
-            // 
-            // name_loc
-            // 
-            this.name_loc.HeaderText = "name_loc";
-            this.name_loc.Name = "name_loc";
-            // 
-            // subname_loc
-            // 
-            this.subname_loc.HeaderText = "subname_loc";
-            this.subname_loc.Name = "subname_loc";
             // 
             // LuiceEditor
             // 

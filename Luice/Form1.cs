@@ -23,6 +23,10 @@ namespace Luice
             string host = hostTxt.Text;
             return host;
         }
+        public string GetPort()
+        {
+            return portTxt.Text;
+        }
         public string GetUser()
         {
             string user = uidTxt.Text;
@@ -74,9 +78,9 @@ namespace Luice
             else
             {
                 sshconn = false;
-                string connection1 = "Server=" + hostTxt.Text + ";Database=" + authTxt.Text + ";UID=" + uidTxt.Text + ";Password=" + passwordTxt.Text + ";";
-                string connection2 = "Server=" + hostTxt.Text + ";Database=" + charTxt.Text + ";UID=" + uidTxt.Text + ";Password=" + passwordTxt.Text + ";";
-                string connection3 = "Server=" + hostTxt.Text + ";Database=" + worldTxt.Text + ";UID=" + uidTxt.Text + ";Password=" + passwordTxt.Text + ";";
+                string connection1 = "Server=" + hostTxt.Text + ";Port=" + portTxt.Text + ";Database=" + authTxt.Text + ";UID=" + uidTxt.Text + ";Password=" + passwordTxt.Text + ";";
+                string connection2 = "Server=" + hostTxt.Text + ";Port=" + portTxt.Text + ";Database=" + charTxt.Text + ";UID=" + uidTxt.Text + ";Password=" + passwordTxt.Text + ";";
+                string connection3 = "Server=" + hostTxt.Text + ";Port=" + portTxt.Text + ";Database=" + worldTxt.Text + ";UID=" + uidTxt.Text + ";Password=" + passwordTxt.Text + ";";
                 MySqlConnection conn1 = new MySqlConnection(connection1);
                 MySqlConnection conn2 = new MySqlConnection(connection2);
                 MySqlConnection conn3 = new MySqlConnection(connection3);
